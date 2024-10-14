@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/1600x900/?tech') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        /* About Me Section */
+        .about {
+            padding: 50px;
+            background-color: #9df9ef;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .skills h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .skill-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        .skill {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .skill p {
+            font-size: 1.2rem;
+        }
+
+        .skill-box div {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .skill-box div:hover {
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px;
+            text-align: center;
+            background-color: #12343b;
+        }
+
+        .projects h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background-color: #ddd;
+            padding: 20px;
+            margin: 15px;
+            width: 300px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .project:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px;
+            background-color: #091f36;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact form button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Himanshu Singh Bhati, a passionate web developer.</p>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Himanshu Singh Bhati , a web developer with experience in building dynamic, responsive, and visually appealing websites. I have a deep passion for technology and enjoy experimenting with new web technologies to build cool things on the web!</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Building responsive layouts and beautiful websites.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Making websites interactive and dynamic.</p>
+            </div>
+            <div class="skill">
+                <h3>Digital marketing</h3>
+                <p>i edit photos for clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-gallery">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A cool project about something awesome.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Another cool project about something even more awesome.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Yet another cool project with more awesomeness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Himanshu | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
